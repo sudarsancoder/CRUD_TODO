@@ -12,7 +12,7 @@ const App = () => {
 
 useEffect(()=>{
   axios.get(`${baseURL}/get`).then((res)=>{
-    console.log(res.data);
+    console.log("useeffect",res.data);
     setTasks(res.data);
   });
 },[updateUI]);
